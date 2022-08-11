@@ -13,6 +13,22 @@ class Book {
         $this->stock = $stock;
         $this->id = $id;
     }
+
+    public function getInfo()
+    {
+        $info = "
+        <b> Author: </b> {$this->author} 
+        <br>
+        <b> Title: </b> {$this->title} 
+        <br>
+        <b> Price: </b> {$this->price} 
+        <br>
+        <b> Stock: </b> {$this->stock} 
+        <br>
+        <b> Id: </b> {$this->id} 
+        ";
+        return $info;
+    }
 }
 
 $book1= new Book(
@@ -22,5 +38,5 @@ $book1= new Book(
     2,
     1
 );
- 
-var_dump($book1);
+
+echo $book1->getInfo(); 
