@@ -14,3 +14,13 @@ class Book {
         $this->id = $id;
     }
 }
+
+$book1= new Book(
+    'Autor',
+    'Titulo',
+    12,
+    2,
+    1
+);
+ 
+var_dump($book1);
