@@ -39,4 +39,4 @@ $book1= new Book(
     1
 );
 
-echo $book1->getInfo(); 
+// echo $book1->getInfo(); 
